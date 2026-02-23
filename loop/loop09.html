@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="field"></div>
+    <script>
+        var sum=0;
+        let class_names = "space";
+        do {
+            var a = parseInt(prompt("Введість число"));
+            console.log(a);
+            sum+=a;
+            console.log(sum);
+
+            let el = document.createElement("span");
+            el.classList = class_names;
+            el.innerHTML= a;
+            field.appendChild(el);
+        }
+        while (a != 0);
+
+        let num = document.createElement("p");
+        num.innerHTML=sum;
+        num.classList="result";
+        field.appendChild(num);
+
+
+        // let a = prompt("Введість число");
+        // let field = document.getElementById("field");
+
+        // let a = Math.floor(Math.random()*100);
+
+        // let num = document.createElement("p");
+        // num.innerHTML=a;
+        // num.classList="result";
+        // field.appendChild(num);
+
+        // for(let i=2;i<a;i+=1){
+        //     let class_names = "space";
+        //     if (a % i == 0){
+        //         // class_names+=" yellow";
+        //          let el = document.createElement("span");
+        //         el.classList = class_names;
+        //         el.innerHTML= i;
+        //         field.appendChild(el);
+        //     }
+        // }
+
+    </script>
+</body>
+</html>
