@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="a">Введіть змінну a:</label><input type="text" id = "a"><br>
+    <label for="b">Введіть змінну b:</label><input type="text" id = "b"><br>
+    <button id  = "btn">Check</button>
+    <p id="result"></p>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",fnc);
+        function fnc(){
+            let a_inpt = document.getElementById("a");
+            let b_inpt = document.getElementById("b");
+            let p = document.getElementById("result");
+            let a = parseInt(a_inpt.value);
+            let b = parseInt(b_inpt.value);
+            if (a>b){
+                p.innerHTML="a > b";
+            } else if(a<b){
+                p.innerHTML="a < b";
+            } else{
+                 p.innerHTML="a = b";
+            }
+            console.log(a);
+        }
+        
+
+    </script>
+</body>
+</html>
