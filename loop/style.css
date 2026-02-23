@@ -2,3 +2,9 @@
     display: inline-block;
     padding: 10px;
 }
+.result{
+    font-weight: bold;
+    border: 1px solid black;
+    width:100px;
+    text-align: center;
+}
