@@ -1,0 +1,20 @@
+<textarea id="myTextarea" placeholder="Введіть дані через кому"></textarea>
+<button onclick="getArray()">Отримати масив</button>
+
+<script>
+function getArray() {
+    // Отримуємо значення з textarea
+    const text = document.getElementById("myTextarea").value;
+    
+    // Вказуємо роздільник (наприклад, кома)
+    const delimiter = ",";
+    
+    // Створюємо масив
+    const array = text
+        .split(delimiter)     // розділяємо
+        .map(item => item.trim())  // прибираємо зайві пробіли
+        .filter(item => item !== ""); // прибираємо порожні елементи
+    
+    console.log(array);
+}
+</script>
