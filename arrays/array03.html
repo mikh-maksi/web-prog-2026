@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Math.floor(Math.random()*10);
+        console.log(a);
+        // aлгоритм завдання значень масиву
+        let arr =[];
+        for(let i = 1;i<10;i+=1){
+            arr.push(Math.floor(Math.random()*10));
+        }
+        console.log(arr);
+        // алгоритм розрахунку суми елементів маива
+        let sum = 0;
+        for(let i=1;i<arr.length;i+=1){
+            sum = sum + arr[i];
+        }
+        console.log(sum);
+        // алгоритм розрахунку добутку елементів масива
+        let mult = 1;
+        for(let i=1;i<arr.length;i+=1){
+            mult = mult * arr[i];
+        }
+        console.log(mult);
+
+
+    </script>
+</body>
+</html>
